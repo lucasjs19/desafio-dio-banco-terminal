@@ -14,6 +14,8 @@ public class Main {
         System.out.println("Por favor, digite o saldo da conta: ");
         Double saldo = sc.nextDouble();
 
+        sc.close();
+
         ContaTerminal conta = new ContaTerminal(numero, agencia, nomeCliente, saldo);
 
         System.out.println(conta);
